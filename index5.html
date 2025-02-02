@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Reservation</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="intexstyle5.js" defer></script>
+    <link rel="stylesheet" href="style5.css">
+
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/OIP.PbZSWSzK4IkZ7PnqDgsAtgHaE7?rs=1&pid=ImgDetMain'); /* Replace with your image path */
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ffffff;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .bank-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            background: transparent;
+        }
+
+        .bank {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .bank h3 {
+            margin-bottom: 10px;
+        }
+
+        .queue {
+            margin-bottom: 20px;
+        }
+
+        .register button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .register button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Reserve Your Spot at the Bank
+</header>
+
+<div class="search-bar">
+    <input type="text" id="search" placeholder="Search banks..." onkeyup="searchFunction()">
+</div>
+
+<div class="bank-section">
+    <div class="bank" id="bank1">
+        <h3>State Bank of India</h3>
+        <div class="queue">
+            <strong>Queue:</strong> 5 people ahead
+        </div>
+        <div class="register">
+            <button>Reserve Spot</button>
+        </div>
+    </div>
+
+    <div class="bank" id="bank2">
+        <h3>Canara Bank</h3>
+        <div class="queue">
+            <strong>Queue:</strong> 3 people ahead
+        </div>
+        <div class="register">
+            <button>Reserve Spot</button>
+        </div>
+    </div>
+
+    <div class="bank" id="bank3">
+        <h3>Kerala Gramin Bank</h3>
+        <div class="queue">
+            <strong>Queue:</strong> 7 people ahead
+        </div>
+        <div class="register">
+            <button>Reserve Spot</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4a90e2;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+#addInstitution {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+#institutionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.institution {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.institution:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #4a90e2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.institution {
+    animation: fadeIn 0.5s ease-in-out;
+}
