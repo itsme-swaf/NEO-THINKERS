@@ -1,34 +1,34 @@
-# [Project Name] 🎯
+# [QUEUE MANAGER] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Neo Thinkers
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: LUBABA KT - EMEA College of arts ans science kondotty
+- Member 2:FATHIMA SWAFEERA KT -  EMEA College of arts ans science kondotty
+-
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://neo-thinkers.vercel.app/
 
 ### Project Description
-[2-3 lines about what your project does]
+Smart Queue Manager is a web app designed to help people reserve a spot in queues at hospitals, banks, and restaurants, reducing their waiting time. It provides real-time queue updates, easy registration, and a user-friendly interface to streamline the process. With features like hospital appointment booking, doctor availability tracking, and bank queue management, it ensures a hassle-free experience. The design is colorful, animated, and simple to understand, making it accessible to everyone.
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+People often face long waiting times at hospitals, banks, and restaurants, leading to frustration and inefficiency. Traditional queue systems lack real-time updates and remote reservation options, causing unnecessary delays and crowding.
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+ Reduce waiting time with real-time queue reservations im hospitals
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML,CSS,JAVA SCRIPT
+- react.JS
+-API(firebase)
+- VS code]
 
 For Hardware:
 - [List main components]
@@ -41,10 +41,11 @@ For Software:
 [commands]
 
 # Run
-[commands]
+0pen index.html in any latest browser
 
 ### Project Documentation
 For Software:
+HTML,CSS,JAVA SCRIPT
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
