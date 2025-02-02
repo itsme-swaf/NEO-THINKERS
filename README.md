@@ -1,4 +1,4 @@
-# [QUEUE MANAGER] 🎯
+# QUEUE MANAGER 🎯
 
 
 ## Basic Details
@@ -7,7 +7,7 @@
 
 ### Team Members
 - Member 1: LUBABA KT - EMEA College of arts ans science kondotty
-- Member 2:FATHIMA SWAFEERA KT -  EMEA College of arts ans science kondotty
+- Member 2: FATHIMA SWAFEERA KT -  EMEA College of arts ans science kondotty
 -
 
 ### Hosted Project Link
@@ -28,7 +28,7 @@ For Software:
 - HTML,CSS,JAVA SCRIPT
 - react.JS
 -API(firebase)
-- VS code]
+- VS code
 
 For Hardware:
 - [List main components]
@@ -48,14 +48,16 @@ For Software:
 HTML,CSS,JAVA SCRIPT
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![.](Screenshots/Signin.png)
 
 ![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![.](Screenshots/Login.png)
 
 ![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![.](Screenshots/HospitalList.png)
+
+![Screenshot4](Add screenshot 4 here with proper name)
+![.](Screenshots/TokenBooking.png)
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
