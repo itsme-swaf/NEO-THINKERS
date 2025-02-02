@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Appointments</title>
     <link rel="stylesheet"href="style3.css">
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore-compat.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <!DOCTYPE html>
@@ -26,6 +29,7 @@
 </div>
 
 <div class="hospital-section">
+    <form action="#" method="post">
     <div class="hospital" id="hospital1">
         <h3>Starlight Medical Center</h3>
         <div class="queue">
@@ -36,37 +40,14 @@
             Dr. John (MBBS, Cardiologist), Dr. Alice (MD, Neurologist)
         </div>
         <div class="register">
-            <button>Book Now</button>
+            <button class="btn" id="bookAppointmentBtn" type="button" >Book Now</button> 
         </div>
+    </form>
     </div>
 
-    <div class="hospital" id="hospital2">
-        <h3>Sunnybrook Hospital</h3>
-        <div class="queue">
-            <strong>Queue:</strong> 3 people ahead
-        </div>
-        <div class="doctors">
-            <strong>Doctors available now:</strong><br>
-            Dr. Sarah (MBBS, Orthopedist), Dr. Emma (MD, Dermatologist)
-        </div>
-        <div class="register">
-            <button>Book Now</button>
-        </div>
-    </div>
 
-    <div class="hospital" id="hospital3">
-        <h3>Evergreen Health Care</h3>
-        <div class="queue">
-            <strong>Queue:</strong> 7 people ahead
-        </div>
-        <div class="doctors">
-            <strong>Doctors available now:</strong><br>
-            Dr. Tom (MBBS, Pediatrician), Dr. Maria (MD, Gynecologist)
-        </div>
-        <div class="register">
-            <button>Book Now</button>
-        </div>
-    </div>
+
+   
 
 
 <script src="script.js"></script>

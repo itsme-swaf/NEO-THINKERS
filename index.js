@@ -30,7 +30,7 @@ const firebaseConfig = {
 document.addEventListener('DOMContentLoaded', function () {
     const loginBtn = document.getElementById('loginUserBtn');
 
-    loginBtn.addEventListener('click', async () => {
+    loginBtn?.addEventListener('click', async () => {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
@@ -65,7 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Successful login
                 alert(`Welcome, ${userData.name}!`);
-                window.location.href = "intex2.html"; // Redirect after login
+                localStorage.setItem("name", userData.name)
+                const value = localStorage.getItem("name")
+                console.log(value)
+                window.location.href = "intex2.html"
+
+                // Redirect after login
 
             } catch (error) {
                 console.error("Login Error:", error);
@@ -78,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
   // Add user to Firestore
-  document.getElementById('addUserBtn').addEventListener('click', async () => {
+  document.getElementById('addUserBtn')?.addEventListener('click', async () => {
     const name = nameInput.value;
     const age = ageInput.value;
     const email = emailInput.value;
@@ -114,13 +119,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //book appoinment
 
+  
 
+document.addEventListener('DOMContentLoaded', function () {
+    const bookBtn = document.getElementById('bookAppointmentBtn');
 
-document.getElementById('bookAppointmentBtn').addEventListener('click', async () => {
-        const name = document.getElementById('name').value;
+    bookBtn.addEventListener('click', async () => {
+        const name = localStorage.getItem("name")
+        ;
         const errorMessage = document.getElementById('errorMessage');
         
-        errorMessage.innerText = ''; // Clear previous error messages
+        // errorMessage.innerText = ''; // Clear previous error messages
 
         if (name) {
             try {
@@ -130,7 +139,7 @@ document.getElementById('bookAppointmentBtn').addEventListener('click', async ()
                     .limit(1)
                     .get();
 
-                let newTokenNumber = 0; // Default first token
+                let newTokenNumber = 1; // Default first token
 
                 if (!querySnapshot.empty) {
                     const lastDoc = querySnapshot.docs[0];
@@ -147,7 +156,7 @@ document.getElementById('bookAppointmentBtn').addEventListener('click', async ()
 
                 // Successful booking
                 alert(`Appointment booked for ${name} with Token Number: ${newTokenNumber}`);
-                window.location.href = "success.html"; // Redirect to success page
+                window.location.href = "intex3.html"; // Redirect to success page
 
             } catch (error) {
                 console.error("Booking Error:", error);
@@ -157,3 +166,4 @@ document.getElementById('bookAppointmentBtn').addEventListener('click', async ()
             errorMessage.innerText = "Please enter your Name.";
         }
     });
+});
